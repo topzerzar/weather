@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B8f-z2-jY7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="WbY-1l-nJe">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghR-tL-Xw9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="B8f-z2-jY7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vQl-G3-Uui">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nMv-Gb-BMi" kind="relationship" relationship="rootViewController" id="Tve-Jx-jGf"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1263" y="102"/>
+        </scene>
+        <!--WeatherHomeStoryboard-->
+        <scene sceneID="er1-5C-XmS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFQ-P5-W3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="WeatherHomeStoryboard" id="nMv-Gb-BMi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="F20-KK-FLC"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="-637" y="34"/>
+        </scene>
+    </scenes>
+</document>

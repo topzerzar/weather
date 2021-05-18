@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 protocol WeatherHomeView: BaseView {
     func displayWeather(viewModel: WeatherHomeViewModel.WeatherModel)
@@ -31,6 +32,7 @@ class WeatherHomeViewController: BaseViewController {
     @IBOutlet weak var inlineErrorLable: UILabel!
     @IBOutlet weak var celsiusButton: UIButton!
     @IBOutlet weak var fahrenheitButton: UIButton!
+    @IBOutlet weak var weatherImage: UIImageView!
 
     let presenter: WeatherHomePresenter = WeatherHomePresenter(service: WeatherHomeService())
 
@@ -101,6 +103,10 @@ extension WeatherHomeViewController: WeatherHomeView {
         self.citiNameLabel.text = viewModel.cityName
         self.tempLabel.text = viewModel.currentTemp
         self.humidityLabel.text = viewModel.humidity
+        
+        if let imageUrl = viewModel.imageUrl {
+            self.weatherImage.kf.setImage(with: imageUrl)
+        }
     }
     
     func displayActiveCelsiusUnit(viewModel: WeatherHomeViewModel.WeatherActiveUnit) {

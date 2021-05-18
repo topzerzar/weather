@@ -23,6 +23,7 @@ struct WeatherHomeViewModel {
         var cityName: String
         var currentTemp: String
         var humidity: String
+        var imageUrl: URL?
     }
     
     struct WeatherActiveUnit {

@@ -15,10 +15,10 @@ class WeatherModel {
     var icon: String?
     
     init(from json: JSON) {
-        self.id = json["feels_like"].number
-        self.main = json["temp_min"].string
-        self.description = json["temp_max"].string
-        self.icon = json["temp"].string
+        self.id = json["id"].number
+        self.main = json["main"].string
+        self.description = json["description"].string
+        self.icon = json["icon"].string
     }
     
 }

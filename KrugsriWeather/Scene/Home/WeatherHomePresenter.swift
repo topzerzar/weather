@@ -94,10 +94,17 @@ class WeatherHomePresenter: WeatherHomePresenterInterface {
     }
     
     private func transformDataToDisplay(data: CurrentWeatherModel) {
+        var imageUrl: URL?
+        if let weather = data.weather, weather.count > 0, let icon = weather[0].icon {
+            let endpoint = ServiceEndPoint.IMAGE_URL + icon + ".png"
+            imageUrl = URL(string: endpoint)
+        }
+        
         let viewModel = WeatherHomeViewModel.WeatherModel(
             cityName: data.cityName ?? "N/A",
             currentTemp: String(format: "%.2f", data.detail?.currentTemp ?? 0.00),
-            humidity: String(format: "%.2f", data.detail?.humidity ?? 0.00)
+            humidity: String(format: "%.2f", data.detail?.humidity ?? 0.00),
+            imageUrl: imageUrl
         )
         
         self.view.displayWeather(viewModel: viewModel)

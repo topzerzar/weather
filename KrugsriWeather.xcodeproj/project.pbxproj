@@ -40,7 +40,6 @@
 		FBEBD0D62653A0D5006AD47E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBD0D52653A0D5006AD47E /* UIColorExtension.swift */; };
 		FBEBD0D92653E6D7006AD47E /* ForecastWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBD0D82653E6D7006AD47E /* ForecastWeatherModel.swift */; };
 		FBEBD0E12653E978006AD47E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBD0E02653E978006AD47E /* WeatherModel.swift */; };
-		FBEBD0EE2653EE7C006AD47E /* ForecastTemperatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBD0ED2653EE7C006AD47E /* ForecastTemperatureModel.swift */; };
 		FBEBD0F126540F6D006AD47E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBD0F026540F6D006AD47E /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +81,6 @@
 		FBEBD0D52653A0D5006AD47E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		FBEBD0D82653E6D7006AD47E /* ForecastWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastWeatherModel.swift; sourceTree = "<group>"; };
 		FBEBD0E02653E978006AD47E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
-		FBEBD0ED2653EE7C006AD47E /* ForecastTemperatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTemperatureModel.swift; sourceTree = "<group>"; };
 		FBEBD0F026540F6D006AD47E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,7 +248,6 @@
 				FBEBD0E02653E978006AD47E /* WeatherModel.swift */,
 				FBEBD0D226537BA5006AD47E /* ErrorModel.swift */,
 				FBEBD0D82653E6D7006AD47E /* ForecastWeatherModel.swift */,
-				FBEBD0ED2653EE7C006AD47E /* ForecastTemperatureModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -398,7 +395,6 @@
 				FB30474C264D0C5000EAAFC5 /* WeatherHomeViewModel.swift in Sources */,
 				FB30471F264D0AA500EAAFC5 /* SceneDelegate.swift in Sources */,
 				FBEBD0C7265350A2006AD47E /* DateFormat.swift in Sources */,
-				FBEBD0EE2653EE7C006AD47E /* ForecastTemperatureModel.swift in Sources */,
 				FBEBD0C32653505F006AD47E /* NumberExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
